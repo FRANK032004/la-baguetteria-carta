@@ -575,6 +575,13 @@
 
   <div class="ui-hint" id="ui-hint">Desliza o toca los bordes del libro para pasar páginas</div>
 
+  <!-- BOTTOM NAV — visible only on mobile/touch screens -->
+  <nav class="bottom-nav" id="bottom-nav" aria-label="Navegación de páginas">
+    <button class="bnav-btn" id="bprev-btn" aria-label="Página anterior">&#8249;</button>
+    <span class="bnav-info" id="bnav-info">Portada</span>
+    <button class="bnav-btn" id="bnext-btn" aria-label="Siguiente página">&#8250;</button>
+  </nav>
+
 </div><!-- /.scene -->
 
 <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
@@ -601,9 +608,11 @@
 
   document.getElementById('prev-btn').onclick = () => pf.flipPrev();
   document.getElementById('next-btn').onclick = () => pf.flipNext();
+  document.getElementById('bprev-btn').onclick = () => pf.flipPrev();
+  document.getElementById('bnext-btn').onclick = () => pf.flipNext();
 
   const sections = [
-    '', 'Bienvenida',
+    'Portada', 'Bienvenida',
     'Desayunos', 'Desayunos',
     'Sándwiches', 'Sándwiches', 'Sándwiches', 'Sándwiches',
     'Empanadas & Bocaditos', 'Empanadas & Bocaditos',
@@ -611,12 +620,13 @@
     'Café & Bebidas', 'Café & Bebidas',
     'Bebidas', 'Bebidas', 'Bebidas',
     'Postres', 'Postres',
-    'Adicionales', '', ''
+    'Adicionales', '', 'La Baguetteria'
   ];
 
   pf.on('flip', function(e) {
-    const s = document.getElementById('ui-section');
-    s.textContent = sections[e.data] || '';
+    const label = sections[e.data] || '';
+    document.getElementById('ui-section').textContent = label;
+    document.getElementById('bnav-info').textContent = label;
     const hint = document.getElementById('ui-hint');
     if (hint) { hint.style.opacity = '0'; hint.style.pointerEvents = 'none'; }
   });
