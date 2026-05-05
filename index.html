@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>La Baguetteria & Delicatezze · Carta Virtual</title>
   <meta name="description" content="Carta virtual de La Baguetteria & Delicatezze. Pan artesanal, café, sándwiches, postres y más." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,809 +12,615 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-inner">
-      <img src="LOGO_BAGUETTERIA-removebg-preview.png" alt="La Baguetteria & Delicatezze" class="logo" />
-      <p class="tagline">Pan artesanal &middot; Café &middot; Delicatessen</p>
+<div class="scene">
+
+  <!-- TOP UI -->
+  <header class="ui-header">
+    <div class="ui-logo-wrap">
+      <img src="LOGO_BAGUETTERIA-removebg-preview.png" alt="La Baguetteria" class="ui-logo" />
     </div>
+    <span class="ui-section" id="ui-section">Portada</span>
   </header>
 
-  <!-- NAVEGACIÓN STICKY -->
-  <nav class="sticky-nav" id="sticky-nav">
-    <div class="nav-inner">
-      <button class="tab-btn active" data-target="desayunos">
-        <span class="tab-icon">☀️</span><span class="tab-label">Desayunos</span>
-      </button>
-      <button class="tab-btn" data-target="sandwiches">
-        <span class="tab-icon">🥖</span><span class="tab-label">Sándwiches</span>
-      </button>
-      <button class="tab-btn" data-target="empanadas">
-        <span class="tab-icon">🥟</span><span class="tab-label">Empanadas</span>
-      </button>
-      <button class="tab-btn" data-target="croissants">
-        <span class="tab-icon">🥐</span><span class="tab-label">Croissants</span>
-      </button>
-      <button class="tab-btn" data-target="cafe-bebidas">
-        <span class="tab-icon">☕</span><span class="tab-label">Café & Bebidas</span>
-      </button>
-      <button class="tab-btn" data-target="postres">
-        <span class="tab-icon">🍰</span><span class="tab-label">Postres</span>
-      </button>
-      <button class="tab-btn" data-target="adicionales">
-        <span class="tab-icon">✨</span><span class="tab-label">Adicionales</span>
-      </button>
-    </div>
-  </nav>
+  <!-- STAGE -->
+  <div class="stage">
+    <button class="nav-btn nav-prev" id="prev-btn" aria-label="Página anterior">&#8249;</button>
+    <div id="book-wrap">
+      <div id="book">
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main id="main-content">
-
-    <!-- ═══════════════════════════════ DESAYUNOS ═══════════════════════════════ -->
-    <section id="desayunos" class="menu-section active">
-      <div class="section-header">
-        <span class="section-icon">☀️</span>
-        <h2>Desayunos</h2>
-      </div>
-      <div class="menu-grid">
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Continental</h3>
-            <p>Café americano, jugo clásico, canasta de pan, mantequilla y mermelada</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 0 · PORTADA
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-cover pg-cover-front">
+          <div class="cv-inner">
+            <div class="cv-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <img src="LOGO_BAGUETTERIA-removebg-preview.png" alt="Logo" class="cv-logo" />
+            <div class="cv-rule"></div>
+            <h1 class="cv-h1">La Baguetteria</h1>
+            <h2 class="cv-h2">&amp; Delicatezze</h2>
+            <div class="cv-rule"></div>
+            <p class="cv-tag">Pan Artesanal &nbsp;·&nbsp; Café &nbsp;·&nbsp; Delicatessen</p>
+            <div class="cv-orn2">· &nbsp; · &nbsp; ·</div>
           </div>
-          <div class="card-price">S/. 18.90</div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>De la Casa</h3>
-            <p>Café americano, croissant de chocolate o manjar, huevos revueltos y jugo clásico</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 1 · BIENVENIDA & ÍNDICE
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-intro">
+          <div class="intro-inner">
+            <div class="intro-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="intro-title">Bienvenidos</h2>
+            <div class="intro-rule"></div>
+            <p class="intro-text">
+              En La Baguetteria &amp; Delicatezze te ofrecemos una experiencia
+              gastronómica única, con productos elaborados con los mejores
+              ingredientes y todo el sabor de nuestra cocina.
+            </p>
+            <div class="intro-rule"></div>
+            <div class="intro-idx">
+              <div class="intro-idx-item"><span class="idx-dot">✦</span><span>Desayunos</span></div>
+              <div class="intro-idx-item"><span class="idx-dot">✦</span><span>Sándwiches</span></div>
+              <div class="intro-idx-item"><span class="idx-dot">✦</span><span>Empanadas &amp; Bocaditos</span></div>
+              <div class="intro-idx-item"><span class="idx-dot">✦</span><span>Croissants</span></div>
+              <div class="intro-idx-item"><span class="idx-dot">✦</span><span>Café &amp; Bebidas</span></div>
+              <div class="intro-idx-item"><span class="idx-dot">✦</span><span>Postres</span></div>
+              <div class="intro-idx-item"><span class="idx-dot">✦</span><span>Adicionales</span></div>
+            </div>
           </div>
-          <div class="card-price">S/. 25.90</div>
         </div>
 
-        <div class="menu-card featured">
-          <div class="card-body">
-            <h3>Criollo</h3>
-            <p>Café americano, canasta de pan, lonjas de chicharrón, camote frito, tamal y jugo clásico</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 2 · IMAGEN DESAYUNOS
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-img">
+          <div class="pg-img-bg" style="background-image:url('IMG 02.png')"></div>
+          <div class="pg-img-overlay">
+            <div class="img-label-wrap">
+              <div class="img-rule"></div>
+              <h2 class="img-title">Desayunos</h2>
+              <div class="img-rule"></div>
+            </div>
           </div>
-          <div class="card-price">S/. 39.90</div>
         </div>
 
-        <div class="menu-card badge-card">
-          <span class="badge">Solo Domingos</span>
-          <div class="card-body">
-            <h3>Frito Piurano</h3>
-            <p>Adobo de cerdo, arroz, tamal de maíz, plátano, camote y encebollado</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 3 · MENÚ DESAYUNOS
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Desayunos</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 17.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Huevos Fritos</h3>
-            <p>Acompañados con tostadas</p>
+          <div class="pl">
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Continental</span><span class="md">Café americano, jugo clásico, canasta de pan, mantequilla y mermelada</span></div>
+              <span class="mp">S/. 18.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">De la Casa</span><span class="md">Café americano, croissant de chocolate o manjar, huevos revueltos y jugo clásico</span></div>
+              <span class="mp">S/. 25.90</span>
+            </div>
+            <div class="mi mi-f">
+              <div class="mi-l"><span class="mn">Criollo</span><span class="md">Café americano, canasta de pan, chicharrón, camote frito, tamal y jugo clásico</span></div>
+              <span class="mp">S/. 39.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Frito Piurano <em class="mbadge">Solo domingos</em></span><span class="md">Adobo de cerdo, arroz, tamal de maíz, plátano, camote y encebollado</span></div>
+              <span class="mp">S/. 17.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Huevos Fritos</span><span class="md">Acompañados con tostadas</span></div>
+              <span class="mp">S/. 7.00</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Huevos Revueltos Simples</span><span class="md">Acompañados con tostadas</span></div>
+              <span class="mp">S/. 7.00</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Huevos Huachanos Clásico</span><span class="md">Acompañados con tostadas</span></div>
+              <span class="mp">S/. 12.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Omelette Simple</span><span class="md">Acompañado con tostadas</span></div>
+              <span class="mp">S/. 9.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Omelette Mixto</span><span class="md">Huevos, jamón y queso. Acompañado con tostadas</span></div>
+              <span class="mp">S/. 12.90</span>
+            </div>
+            <div class="mi mi-f">
+              <div class="mi-l"><span class="mn">Lomito Campesino</span><span class="md">Jugoso lomito saltado, canasta de pan (4 und). Pan ciabatta, francés o económico</span></div>
+              <span class="mp">S/. 30.90</span>
+            </div>
           </div>
-          <div class="card-price">S/. 7.00</div>
+          <div class="pf"><span>· 3 ·</span></div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Huevos Revueltos Simples</h3>
-            <p>Acompañados con tostadas</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 4 · IMAGEN SÁNDWICHES
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-img">
+          <div class="pg-img-bg" style="background-image:url('IMG 01.png')"></div>
+          <div class="pg-img-overlay">
+            <div class="img-label-wrap">
+              <div class="img-rule"></div>
+              <h2 class="img-title">Sándwiches</h2>
+              <div class="img-rule"></div>
+            </div>
           </div>
-          <div class="card-price">S/. 7.00</div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Huevos Huachanos Clásico</h3>
-            <p>Acompañados con tostadas</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 5 · SÁNDWICHES PARTE I
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Sándwiches</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 12.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Omelette Simple</h3>
-            <p>Acompañado con tostadas</p>
+          <div class="pl">
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Pan con Lomo Saltado</span><span class="md">Pan ciabatta o yema con jugoso lomo saltado</span></div>
+              <span class="mp">S/. 21.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Hamburguesa de la Casa</span><span class="md">Pan de camote, carne de la casa, lechuga, tomate y papas fritas</span></div>
+              <span class="mp">S/. 16.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Kilométrico</span><span class="md">Pan de hot dog, salchicha vienesa y papas al hilo</span></div>
+              <span class="mp">S/. 7.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Choripán</span><span class="md">Pan baguettino, chorizo parrillero y chimichurri</span></div>
+              <span class="mp">S/. 8.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Chicharrón</span><span class="md">Pan francés, 100g de chicharrón de chancho, camote frito y sarsa criolla</span></div>
+              <span class="mp">S/. 21.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Pavo al Horno</span><span class="md">Pan ciabatta, 160g de pechuga de pavo, lechuga orgánica y sarsa criolla</span></div>
+              <span class="mp">S/. 19.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Salchicha Huachana</span><span class="md">Pan ciabatta, salchicha huachana y huevo frito</span></div>
+              <span class="mp">S/. 17.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Mixto a la Plancha</span><span class="md">2 triples con jamón y queso edam</span></div>
+              <span class="mp">S/. 20.90</span>
+            </div>
           </div>
-          <div class="card-price">S/. 9.90</div>
+          <div class="pf"><span>· 5 ·</span></div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Omelette Mixto</h3>
-            <p>Huevos, jamón y queso. Acompañado con tostadas</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 6 · SÁNDWICHES PARTE II
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Sándwiches</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 12.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Lomito Campesino</h3>
-            <p>Jugoso lomito saltado, canasta de pan (4 und). Pan ciabatta, francés o económico</p>
+          <div class="pl">
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Mixto Completo</span><span class="md">2 triples con jamón, queso edam y huevo frito</span></div>
+              <span class="mp">S/. 20.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Clásico</span><span class="md">2 triples con tomate, huevo duro, palta y mayonesa</span></div>
+              <span class="mp">S/. 20.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Molde Integral o Blanco</span><span class="md">2 triples con pollo, queso edam y jamón inglés</span></div>
+              <span class="mp">S/. 20.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Light</span><span class="md">2 triples (blanco o integral) con huevo, jamón, queso y palta</span></div>
+              <span class="mp">S/. 20.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Mozzarella Chicken</span><span class="md">2 triples con pollo deshilachado, queso edam, durazno, mayonesa y orégano</span></div>
+              <span class="mp">S/. 19.90</span>
+            </div>
+            <div class="mi mi-f">
+              <div class="mi-l"><span class="mn">Club Sándwich</span><span class="md">4 cortes de pan molde, jamón, queso, pollo, salchicha huachana, palta, mayonesa y papas fritas</span></div>
+              <span class="mp">S/. 38.90</span>
+            </div>
+            <div class="mi mi-f">
+              <div class="mi-l"><span class="mn">Box Sanguchero</span><span class="md">Mini sánd. chicharrón · huachano · pavo · capresse · papas fritas</span></div>
+              <span class="mp">S/. 35.00</span>
+            </div>
           </div>
-          <div class="card-price">S/. 30.90</div>
+          <div class="pf"><span>· 6 ·</span></div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════ SÁNDWICHES ═══════════════════════════════ -->
-    <section id="sandwiches" class="menu-section">
-      <div class="section-header">
-        <span class="section-icon">🥖</span>
-        <h2>Sándwiches</h2>
-      </div>
-      <div class="menu-grid">
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Pan con Lomo Saltado</h3>
-            <p>Pan ciabatta o yema con jugoso lomo saltado</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 7 · IMAGEN CLUB SÁNDWICH
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-img">
+          <div class="pg-img-bg" style="background-image:url('IMG 03.png')"></div>
+          <div class="pg-img-overlay">
+            <div class="img-label-wrap">
+              <div class="img-rule"></div>
+              <h2 class="img-title">Club Sándwich</h2>
+              <div class="img-rule"></div>
+            </div>
           </div>
-          <div class="card-price">S/. 21.90</div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Hamburguesa de la Casa</h3>
-            <p>Pan hamburguesa de camote, carne de la casa, lechuga, tomate y papas fritas</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 8 · IMAGEN EMPANADAS
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-img">
+          <div class="pg-img-bg" style="background-image:url('IMG 06.png')"></div>
+          <div class="pg-img-overlay">
+            <div class="img-label-wrap">
+              <div class="img-rule"></div>
+              <h2 class="img-title">Empanadas &amp; Bocaditos</h2>
+              <div class="img-rule"></div>
+            </div>
           </div>
-          <div class="card-price">S/. 16.90</div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Kilométrico</h3>
-            <p>Pan de hot dog, salchicha vienesa y papas al hilo</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 9 · MENÚ EMPANADAS
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Empanadas &amp; Bocaditos</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 7.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Choripán</h3>
-            <p>Pan baguettino, chorizo parrillero y chimichurri</p>
+          <div class="pl">
+            <div class="ms">Empanadas</div>
+            <div class="mi"><div class="mi-l"><span class="mn">De Carne</span></div><span class="mp">S/. 6.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">De Pollo</span></div><span class="mp">S/. 6.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">De Pizza</span></div><span class="mp">S/. 7.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">De Lomo</span></div><span class="mp">S/. 9.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">De Ají de Gallina</span></div><span class="mp">S/. 7.90</span></div>
+            <div class="ms">Bocaditos</div>
+            <div class="mi"><div class="mi-l"><span class="mn">Tamal de Choclo o Maíz</span></div><span class="mp">S/. 4.00</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Papa Rellena</span></div><span class="mp">S/. 6.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Quiche de Jamón y Queso</span></div><span class="mp">S/. 14.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Pastel de Acelga</span></div><span class="mp">S/. 14.90</span></div>
+            <div class="ms">Pizzas Personales</div>
+            <div class="mi"><div class="mi-l"><span class="mn">Pizza Americana</span></div><span class="mp">S/. 6.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Pizza Hawaiana</span></div><span class="mp">S/. 7.50</span></div>
           </div>
-          <div class="card-price">S/. 8.90</div>
+          <div class="pf"><span>· 9 ·</span></div>
         </div>
 
-        <div class="menu-card featured">
-          <div class="card-body">
-            <h3>Club Sándwich</h3>
-            <p>4 cortes de pan de molde blanco, rellenos de jamón, queso, pollo deshilachado, salchicha huachana, palta, mayonesa y papas fritas</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 10 · IMAGEN CROISSANTS
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-img">
+          <div class="pg-img-bg" style="background-image:url('IMG 04.png')"></div>
+          <div class="pg-img-overlay">
+            <div class="img-label-wrap">
+              <div class="img-rule"></div>
+              <h2 class="img-title">Croissants</h2>
+              <div class="img-rule"></div>
+            </div>
           </div>
-          <div class="card-price">S/. 38.90</div>
         </div>
 
-        <div class="menu-card featured">
-          <div class="card-body">
-            <h3>Box Sanguchero</h3>
-            <p>1 mini sándwich de chicharrón · 1 mini sándwich huachano · 1 mini sándwich de pavo · 1 mini sándwich capresse · papas fritas</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 11 · MENÚ CROISSANTS
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Croissants</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 35.00</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Mixto a la Plancha</h3>
-            <p>2 triples con jamón y queso edam</p>
+          <div class="pl">
+            <div class="ms">De Mantequilla</div>
+            <div class="mi"><div class="mi-l"><span class="mn">Mantequilla</span></div><span class="mp">S/. 3.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Chocolate</span></div><span class="mp">S/. 3.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Manjar</span></div><span class="mp">S/. 3.90</span></div>
+            <div class="ms">Sándwich de Croissant</div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Pollo con Durazno</span><span class="md">Croissant de mantequilla relleno de pollo y durazno</span></div>
+              <span class="mp">S/. 15.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Pollo con Tocino</span><span class="md">Croissant de mantequilla relleno de pollo y tocino ahumado</span></div>
+              <span class="mp">S/. 15.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Huevo Revuelto</span><span class="md">Huevo revuelto, tocino ahumado y palta</span></div>
+              <span class="mp">S/. 15.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Fresas y Crema Pastelera</span><span class="md">Crema pastelera y fresas frescas</span></div>
+              <span class="mp">S/. 13.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Palta</span><span class="md">Croissant de mantequilla relleno de palta</span></div>
+              <span class="mp">S/. 10.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Jamón y Queso</span><span class="md">Croissant de mantequilla con jamón y queso</span></div>
+              <span class="mp">S/. 12.90</span>
+            </div>
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Pollo</span><span class="md">Pollo deshilachado, apio y mayonesa</span></div>
+              <span class="mp">S/. 10.90</span>
+            </div>
           </div>
-          <div class="card-price">S/. 20.90</div>
+          <div class="pf"><span>· 11 ·</span></div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Mixto Completo</h3>
-            <p>2 triples con jamón, queso edam y huevo frito</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 12 · IMAGEN CAFÉ
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-img">
+          <div class="pg-img-bg" style="background-image:url('IMG 05.png')"></div>
+          <div class="pg-img-overlay">
+            <div class="img-label-wrap">
+              <div class="img-rule"></div>
+              <h2 class="img-title">Café &amp; Infusiones</h2>
+              <div class="img-rule"></div>
+            </div>
           </div>
-          <div class="card-price">S/. 20.90</div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Clásico</h3>
-            <p>2 triples con tomate, huevo duro, palta y mayonesa</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 13 · MENÚ CAFÉ
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Café &amp; Infusiones</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 20.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Molde Integral o Blanco</h3>
-            <p>2 triples con pollo, queso edam y jamón inglés</p>
+          <div class="pl">
+            <div class="ms">Café</div>
+            <div class="mi"><div class="mi-l"><span class="mn">Café Americano</span></div><span class="mp">S/. 6.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Café Cortado</span></div><span class="mp">S/. 6.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Café Espresso</span></div><span class="mp">S/. 7.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Café con Leche</span></div><span class="mp">S/. 9.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Capuccino</span></div><span class="mp">S/. 10.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Café Doble Espresso</span></div><span class="mp">S/. 12.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Mocaccino</span></div><span class="mp">S/. 14.90</span></div>
+            <div class="ms">Infusiones</div>
+            <div class="mi"><div class="mi-l"><span class="mn">Té, Canela y Clavo</span></div><span class="mp">S/. 5.00</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Hierba Luisa</span></div><span class="mp">S/. 5.00</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Manzanilla</span></div><span class="mp">S/. 5.00</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Anís</span></div><span class="mp">S/. 5.00</span></div>
           </div>
-          <div class="card-price">S/. 20.90</div>
+          <div class="pf"><span>· 13 ·</span></div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Light</h3>
-            <p>2 triples (blanco o integral) con huevo, jamón, queso y palta</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 14 · IMAGEN BEBIDAS
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-img">
+          <div class="pg-img-bg" style="background-image:url('IMG 08.png')"></div>
+          <div class="pg-img-overlay">
+            <div class="img-label-wrap">
+              <div class="img-rule"></div>
+              <h2 class="img-title">Bebidas</h2>
+              <div class="img-rule"></div>
+            </div>
           </div>
-          <div class="card-price">S/. 20.90</div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Mozzarella Chicken</h3>
-            <p>2 triples con pollo deshilachado, queso edam, durazno, mayonesa y orégano</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 15 · BEBIDAS FRÍAS
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Bebidas Frías</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 19.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Chicharrón</h3>
-            <p>Pan francés, 100 gr de chicharrón de chancho, camote frito y sarsa criolla</p>
+          <div class="pl">
+            <div class="ms">Frapuccinos &amp; Milkshakes</div>
+            <div class="mi"><div class="mi-l"><span class="mn">Frapuccino Clásico</span></div><span class="mp">S/. 14.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Frapuccino de Manjar</span></div><span class="mp">S/. 14.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Frapuccino de Óreo</span></div><span class="mp">S/. 15.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Frapuccino de Moka</span></div><span class="mp">S/. 14.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Milkshake de Vainilla</span></div><span class="mp">S/. 14.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Milkshake de Fresa</span></div><span class="mp">S/. 16.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Milkshake de Óreo</span></div><span class="mp">S/. 14.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Ice Latte</span></div><span class="mp">S/. 15.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Affogato</span></div><span class="mp">S/. 12.90</span></div>
           </div>
-          <div class="card-price">S/. 21.90</div>
+          <div class="pf"><span>· 15 ·</span></div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Pavo al Horno</h3>
-            <p>Pan ciabatta blanco, 160 gr de pechuga de pavo, lechuga orgánica y sarsa criolla</p>
+        <!-- ══════════════════════════════════════════════
+             PAGE 16 · JUGOS & GASEOSAS
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Jugos &amp; Bebidas</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 19.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Salchicha Huachana</h3>
-            <p>Pan ciabatta blanco, salchicha huachana y huevo frito</p>
+          <div class="pl pl-compact">
+            <div class="ms">Jugos Naturales</div>
+            <div class="mi"><div class="mi-l"><span class="mn">Jugo Clásico</span><span class="md">Papaya, melón o piña</span></div><span class="mp">S/. 10.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Jugo Especial Surtido</span><span class="md">Papaya, melón, piña y fresa</span></div><span class="mp">S/. 11.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Jugo de Fresa</span></div><span class="mp">S/. 11.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Fresa con Leche</span></div><span class="mp">S/. 12.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Jugo de Naranja</span></div><span class="mp">S/. 11.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Chicha Morada (vaso)</span></div><span class="mp">S/. 5.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Chicha Morada 1 Litro</span></div><span class="mp">S/. 19.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Frozen de Fresa</span></div><span class="mp">S/. 9.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Frozen de Piña</span></div><span class="mp">S/. 6.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Frozen de Limón</span></div><span class="mp">S/. 6.90</span></div>
+            <div class="ms">Bebidas en Botella</div>
+            <div class="mi"><div class="mi-l"><span class="mn">Agua San Luis (c/g o s/g)</span></div><span class="mp">S/. 2.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Coca Cola / Inca Kola / Fanta / Sprite</span></div><span class="mp">S/. 3.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Gaseosa 300 ml</span></div><span class="mp">S/. 2.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Frugo de Durazno 300 ml</span></div><span class="mp">S/. 3.60</span></div>
           </div>
-          <div class="card-price">S/. 17.90</div>
+          <div class="pf"><span>· 16 ·</span></div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════ EMPANADAS ═══════════════════════════════ -->
-    <section id="empanadas" class="menu-section">
-      <div class="section-header">
-        <span class="section-icon">🥟</span>
-        <h2>Empanadas & Bocaditos</h2>
-      </div>
-      <div class="menu-grid">
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Empanada de Carne</h3>
+        <!-- ══════════════════════════════════════════════
+             PAGE 17 · IMAGEN POSTRES
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-img">
+          <div class="pg-img-bg" style="background-image:url('IMG 07.png')"></div>
+          <div class="pg-img-overlay">
+            <div class="img-label-wrap">
+              <div class="img-rule"></div>
+              <h2 class="img-title">Postres</h2>
+              <div class="img-rule"></div>
+            </div>
           </div>
-          <div class="card-price">S/. 6.90</div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Empanada de Pollo</h3>
+        <!-- ══════════════════════════════════════════════
+             PAGE 18 · MENÚ POSTRES
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Postres</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 6.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Empanada de Pizza</h3>
+          <div class="pl pl-compact">
+            <div class="mi"><div class="mi-l"><span class="mn">Cheesecake de Óreo</span></div><span class="mp">S/. 15.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Cheesecake de Maracuyá</span></div><span class="mp">S/. 13.00</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Cheesecake de Fresa</span></div><span class="mp">S/. 13.00</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Pie de Limón</span></div><span class="mp">S/. 8.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Pie de Manzana</span></div><span class="mp">S/. 7.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Donas <span class="mn-sub">(crema pastelera, manjar o chocolate)</span></span></div><span class="mp">S/. 5.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Milhojas de Manjar Blanco</span></div><span class="mp">S/. 8.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Milhojas de Fresa</span></div><span class="mp">S/. 9.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Budín</span></div><span class="mp">S/. 4.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Brownie</span></div><span class="mp">S/. 4.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Brownie con Helado</span></div><span class="mp">S/. 7.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Tartaleta de Manzana</span></div><span class="mp">S/. 5.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Alfajor de Manjar</span></div><span class="mp">S/. 1.70</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Alfajor Bañado en Chocolate</span></div><span class="mp">S/. 5.90</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Crema Volteada</span></div><span class="mp">S/. 12.90</span></div>
+            <div class="mi mi-f"><div class="mi-l"><span class="mn">Porción de Torta del Día</span></div><span class="mp">S/. 15.00</span></div>
           </div>
-          <div class="card-price">S/. 7.90</div>
+          <div class="pf"><span>· 18 ·</span></div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Empanada de Lomo</h3>
+        <!-- ══════════════════════════════════════════════
+             PAGE 19 · ADICIONALES
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-menu">
+          <div class="ph">
+            <div class="ph-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <h2 class="pt">Adicionales</h2>
+            <div class="ph-rule"></div>
           </div>
-          <div class="card-price">S/. 9.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Empanada de Ají de Gallina</h3>
+          <div class="pl">
+            <div class="mi">
+              <div class="mi-l"><span class="mn">Canasta de Pan</span><span class="md">4 panes: francés, ciabatta, integral o económico</span></div>
+              <span class="mp">S/. 3.00</span>
+            </div>
+            <div class="mi"><div class="mi-l"><span class="mn">Porción de Papas Fritas</span></div><span class="mp">S/. 7.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Blíster de Mantequilla y Mermelada</span></div><span class="mp">S/. 2.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Queso Edam</span></div><span class="mp">S/. 2.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Huevo</span></div><span class="mp">S/. 2.00</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Jamón Inglés</span></div><span class="mp">S/. 3.00</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Palta</span></div><span class="mp">S/. 3.00</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Bola de Helado</span></div><span class="mp">S/. 2.50</span></div>
+            <div class="mi"><div class="mi-l"><span class="mn">Leche 200 ml</span></div><span class="mp">S/. 3.00</span></div>
           </div>
-          <div class="card-price">S/. 7.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Tamal de Choclo o Maíz</h3>
+          <div class="pg-thanks">
+            <div class="thanks-rule"></div>
+            <p class="thanks-text">Gracias por visitarnos</p>
+            <div class="thanks-rule"></div>
           </div>
-          <div class="card-price">S/. 4.00</div>
+          <div class="pf"><span>· 19 ·</span></div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Papa Rellena</h3>
+        <!-- ══════════════════════════════════════════════
+             PAGE 20 · PÁGINA DECORATIVA
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-deco">
+          <div class="deco-inner">
+            <div class="deco-orn">✦</div>
+            <img src="LOGO_BAGUETTERIA-removebg-preview.png" alt="" class="deco-logo" />
+            <div class="deco-orn2">· &nbsp; · &nbsp; ·</div>
+            <p class="deco-text">Pan Artesanal &nbsp;·&nbsp; Café &nbsp;·&nbsp; Delicatessen</p>
           </div>
-          <div class="card-price">S/. 6.90</div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Quiche de Jamón y Queso</h3>
+        <!-- ══════════════════════════════════════════════
+             PAGE 21 · CONTRAPORTADA
+        ══════════════════════════════════════════════ -->
+        <div class="page pg-cover pg-cover-back">
+          <div class="cv-back-inner">
+            <div class="cv-orn">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <img src="LOGO_BAGUETTERIA-removebg-preview.png" alt="Logo" class="cv-back-logo" />
+            <div class="cv-rule"></div>
+            <p class="cv-back-name">La Baguetteria &amp; Delicatezze</p>
+            <p class="cv-back-tag">Pan Artesanal &nbsp;·&nbsp; Café &nbsp;·&nbsp; Delicatessen</p>
+            <div class="cv-rule"></div>
+            <div class="cv-orn2">· &nbsp; · &nbsp; ·</div>
           </div>
-          <div class="card-price">S/. 14.90</div>
         </div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Pastel de Acelga</h3>
-          </div>
-          <div class="card-price">S/. 14.90</div>
-        </div>
+      </div><!-- /#book -->
+    </div><!-- /#book-wrap -->
+    <button class="nav-btn nav-next" id="next-btn" aria-label="Siguiente página">&#8250;</button>
+  </div><!-- /.stage -->
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Pizza Americana</h3>
-          </div>
-          <div class="card-price">S/. 6.50</div>
-        </div>
+  <div class="ui-hint" id="ui-hint">Desliza o toca los bordes del libro para pasar páginas</div>
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Pizza Hawaiana</h3>
-          </div>
-          <div class="card-price">S/. 7.50</div>
-        </div>
+</div><!-- /.scene -->
 
-      </div>
-    </section>
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+<script>
+  const pf = new St.PageFlip(document.getElementById('book'), {
+    width: 540,
+    height: 720,
+    size: 'stretch',
+    minWidth: 260,
+    maxWidth: 680,
+    minHeight: 340,
+    maxHeight: 960,
+    showCover: true,
+    mobileScrollSupport: false,
+    usePortrait: true,
+    drawShadow: true,
+    maxShadowOpacity: 0.65,
+    flippingTime: 900,
+    clickEventForward: true,
+    swipeDistance: 25,
+  });
 
-    <!-- ═══════════════════════════════ CROISSANTS ═══════════════════════════════ -->
-    <section id="croissants" class="menu-section">
-      <div class="section-header">
-        <span class="section-icon">🥐</span>
-        <h2>Croissants</h2>
-      </div>
+  pf.loadFromHTML(document.querySelectorAll('.page'));
 
-      <h3 class="subsection-title">Croissants de Mantequilla</h3>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>De Mantequilla</h3>
-          </div>
-          <div class="card-price">S/. 3.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>De Chocolate</h3>
-          </div>
-          <div class="card-price">S/. 3.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>De Manjar</h3>
-          </div>
-          <div class="card-price">S/. 3.90</div>
-        </div>
-      </div>
+  document.getElementById('prev-btn').onclick = () => pf.flipPrev();
+  document.getElementById('next-btn').onclick = () => pf.flipNext();
 
-      <h3 class="subsection-title">Sándwich de Croissant</h3>
-      <div class="menu-grid">
+  const sections = [
+    '', 'Bienvenida',
+    'Desayunos', 'Desayunos',
+    'Sándwiches', 'Sándwiches', 'Sándwiches', 'Sándwiches',
+    'Empanadas & Bocaditos', 'Empanadas & Bocaditos',
+    'Croissants', 'Croissants',
+    'Café & Bebidas', 'Café & Bebidas',
+    'Bebidas', 'Bebidas', 'Bebidas',
+    'Postres', 'Postres',
+    'Adicionales', '', ''
+  ];
 
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Pollo con Durazno</h3>
-            <p>Croissant de mantequilla relleno de pollo y durazno</p>
-          </div>
-          <div class="card-price">S/. 15.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Pollo con Tocino</h3>
-            <p>Croissant de mantequilla relleno de pollo y tocino ahumado</p>
-          </div>
-          <div class="card-price">S/. 15.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Huevo Revuelto</h3>
-            <p>Croissant de mantequilla relleno de huevo revuelto, tocino ahumado y palta</p>
-          </div>
-          <div class="card-price">S/. 15.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Fresas y Crema Pastelera</h3>
-            <p>Croissant de mantequilla relleno de crema pastelera y fresas frescas</p>
-          </div>
-          <div class="card-price">S/. 13.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Palta</h3>
-            <p>Croissant de mantequilla relleno de palta</p>
-          </div>
-          <div class="card-price">S/. 10.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Jamón y Queso</h3>
-            <p>Croissant de mantequilla con jamón y queso</p>
-          </div>
-          <div class="card-price">S/. 12.90</div>
-        </div>
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Pollo</h3>
-            <p>Croissant de mantequilla con pollo deshilachado, apio y mayonesa</p>
-          </div>
-          <div class="card-price">S/. 10.90</div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════ CAFÉ & BEBIDAS ═══════════════════════════════ -->
-    <section id="cafe-bebidas" class="menu-section">
-      <div class="section-header">
-        <span class="section-icon">☕</span>
-        <h2>Café & Bebidas</h2>
-      </div>
-
-      <!-- Café -->
-      <h3 class="subsection-title">Café</h3>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <div class="card-body"><h3>Café Americano</h3></div>
-          <div class="card-price">S/. 6.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Café Cortado</h3></div>
-          <div class="card-price">S/. 6.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Café Espresso</h3></div>
-          <div class="card-price">S/. 7.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Café con Leche</h3></div>
-          <div class="card-price">S/. 9.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Capuccino</h3></div>
-          <div class="card-price">S/. 10.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Café Doble Espresso</h3></div>
-          <div class="card-price">S/. 12.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Mocaccino</h3></div>
-          <div class="card-price">S/. 14.90</div>
-        </div>
-      </div>
-
-      <!-- Infusiones -->
-      <h3 class="subsection-title">Infusiones</h3>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <div class="card-body"><h3>Té, Canela y Clavo</h3></div>
-          <div class="card-price">S/. 5.00</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Hierba Luisa</h3></div>
-          <div class="card-price">S/. 5.00</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Manzanilla</h3></div>
-          <div class="card-price">S/. 5.00</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Anís</h3></div>
-          <div class="card-price">S/. 5.00</div>
-        </div>
-      </div>
-
-      <!-- Bebidas Frías -->
-      <h3 class="subsection-title">Bebidas Frías</h3>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <div class="card-body"><h3>Frapuccino Clásico</h3></div>
-          <div class="card-price">S/. 14.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Frapuccino de Manjar</h3></div>
-          <div class="card-price">S/. 14.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Frapuccino de Óreo</h3></div>
-          <div class="card-price">S/. 15.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Frapuccino de Moka</h3></div>
-          <div class="card-price">S/. 14.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Milkshake de Vainilla</h3></div>
-          <div class="card-price">S/. 14.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Milkshake de Fresa</h3></div>
-          <div class="card-price">S/. 16.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Milkshake de Óreo</h3></div>
-          <div class="card-price">S/. 14.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Ice Latte</h3></div>
-          <div class="card-price">S/. 15.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Affogato</h3></div>
-          <div class="card-price">S/. 12.90</div>
-        </div>
-      </div>
-
-      <!-- Jugos -->
-      <h3 class="subsection-title">Jugos & Naturales</h3>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Jugo Clásico</h3>
-            <p>Papaya, melón o piña</p>
-          </div>
-          <div class="card-price">S/. 10.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Jugo Especial Surtido</h3>
-            <p>Papaya, melón, piña y fresa</p>
-          </div>
-          <div class="card-price">S/. 11.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Jugo de Fresa</h3></div>
-          <div class="card-price">S/. 11.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Jugo de Fresa con Leche</h3></div>
-          <div class="card-price">S/. 12.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Jugo de Naranja</h3></div>
-          <div class="card-price">S/. 11.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Chicha Morada (vaso)</h3></div>
-          <div class="card-price">S/. 5.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Chicha Morada 1 Litro</h3></div>
-          <div class="card-price">S/. 19.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Frozen de Fresa</h3></div>
-          <div class="card-price">S/. 9.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Frozen de Piña</h3></div>
-          <div class="card-price">S/. 6.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Frozen de Limón</h3></div>
-          <div class="card-price">S/. 6.90</div>
-        </div>
-      </div>
-
-      <!-- Bebidas en Botella -->
-      <h3 class="subsection-title">Bebidas en Botella</h3>
-      <div class="menu-grid">
-        <div class="menu-card">
-          <div class="card-body"><h3>Agua San Luis (c/g o s/g)</h3></div>
-          <div class="card-price">S/. 2.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Coca Cola Personal</h3></div>
-          <div class="card-price">S/. 3.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Inca Kola Personal</h3></div>
-          <div class="card-price">S/. 3.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Fanta Personal</h3></div>
-          <div class="card-price">S/. 3.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Sprite Personal</h3></div>
-          <div class="card-price">S/. 3.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Gaseosa 300 ml</h3></div>
-          <div class="card-price">S/. 2.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Frugo de Durazno 300 ml</h3></div>
-          <div class="card-price">S/. 3.60</div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ═══════════════════════════════ POSTRES ═══════════════════════════════ -->
-    <section id="postres" class="menu-section">
-      <div class="section-header">
-        <span class="section-icon">🍰</span>
-        <h2>Postres</h2>
-      </div>
-      <div class="menu-grid">
-
-        <div class="menu-card featured">
-          <div class="card-body"><h3>Cheesecake de Óreo</h3></div>
-          <div class="card-price">S/. 15.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Cheesecake de Maracuyá</h3></div>
-          <div class="card-price">S/. 13.00</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Cheesecake de Fresa</h3></div>
-          <div class="card-price">S/. 13.00</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Pie de Limón</h3></div>
-          <div class="card-price">S/. 8.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Pie de Manzana</h3></div>
-          <div class="card-price">S/. 7.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Donas</h3>
-            <p>Crema pastelera, manjar o chocolate</p>
-          </div>
-          <div class="card-price">S/. 5.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Milhojas de Manjar Blanco</h3></div>
-          <div class="card-price">S/. 8.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Milhojas de Fresa</h3></div>
-          <div class="card-price">S/. 9.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Budín</h3></div>
-          <div class="card-price">S/. 4.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Brownie</h3></div>
-          <div class="card-price">S/. 4.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Brownie con Helado</h3></div>
-          <div class="card-price">S/. 7.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Tartaleta de Manzana</h3></div>
-          <div class="card-price">S/. 5.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Alfajor de Manjar</h3></div>
-          <div class="card-price">S/. 1.70</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Alfajor Bañado en Chocolate</h3></div>
-          <div class="card-price">S/. 5.90</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Crema Volteada</h3></div>
-          <div class="card-price">S/. 12.90</div>
-        </div>
-        <div class="menu-card featured">
-          <div class="card-body"><h3>Porción de Torta del Día</h3></div>
-          <div class="card-price">S/. 15.00</div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════ ADICIONALES ═══════════════════════════════ -->
-    <section id="adicionales" class="menu-section">
-      <div class="section-header">
-        <span class="section-icon">✨</span>
-        <h2>Adicionales</h2>
-      </div>
-      <div class="menu-grid">
-
-        <div class="menu-card">
-          <div class="card-body">
-            <h3>Canasta de Pan</h3>
-            <p>4 panes: francés, ciabatta, integral o económico</p>
-          </div>
-          <div class="card-price">S/. 3.00</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Porción de Papas Fritas</h3></div>
-          <div class="card-price">S/. 7.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Blíster de Mantequilla y Mermelada</h3></div>
-          <div class="card-price">S/. 2.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Queso Edam</h3></div>
-          <div class="card-price">S/. 2.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Huevo</h3></div>
-          <div class="card-price">S/. 2.00</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Jamón Inglés</h3></div>
-          <div class="card-price">S/. 3.00</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Palta</h3></div>
-          <div class="card-price">S/. 3.00</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Bola de Helado</h3></div>
-          <div class="card-price">S/. 2.50</div>
-        </div>
-        <div class="menu-card">
-          <div class="card-body"><h3>Leche 200 ml</h3></div>
-          <div class="card-price">S/. 3.00</div>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <img src="LOGO_BAGUETTERIA-removebg-preview.png" alt="La Baguetteria & Delicatezze" class="footer-logo" />
-      <p class="footer-name">La Baguetteria & Delicatezze</p>
-      <p class="footer-tagline">Pan artesanal · Café · Delicatessen</p>
-      <p class="footer-copy">&copy; 2025 La Baguetteria & Delicatezze. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Tab navigation
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const sections = document.querySelectorAll('.menu-section');
-
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const target = btn.dataset.target;
-
-        tabBtns.forEach(b => b.classList.remove('active'));
-        sections.forEach(s => s.classList.remove('active'));
-
-        btn.classList.add('active');
-        const targetSection = document.getElementById(target);
-        if (targetSection) {
-          targetSection.classList.add('active');
-        }
-
-        // Scroll to top of main content
-        document.getElementById('main-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
-
-    // Sticky nav shadow on scroll
-    const nav = document.getElementById('sticky-nav');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 10) {
-        nav.classList.add('scrolled');
-      } else {
-        nav.classList.remove('scrolled');
-      }
-    });
-  </script>
+  pf.on('flip', function(e) {
+    const s = document.getElementById('ui-section');
+    s.textContent = sections[e.data] || '';
+    const hint = document.getElementById('ui-hint');
+    if (hint) { hint.style.opacity = '0'; hint.style.pointerEvents = 'none'; }
+  });
+</script>
 
 </body>
 </html>
